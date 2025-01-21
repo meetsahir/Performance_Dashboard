@@ -1,4 +1,3 @@
-
 # Performance Dashboard
 
 ### We are developing an interactive dashboard to analyze and visualize the sales performance of a company, comparing actual results against set targets. This tool aims to provide insightful metrics and trends to help drive strategic decision-making
@@ -75,4 +74,51 @@ We have everything ready now to start creating the dashboard
 
 - Cards are used to display the KPIs on the left side
 
-https://github.com/meetsahir/Performance_Dashboard/blob/main/1.png
+![Image](https://github.com/user-attachments/assets/09e7c1a0-46b8-48f0-9de0-9e4ec1501298)
+
+- We calculate the measures as above which are later shown on the cards 
+- Below the cards we have a Clustered Column chart to show the months on which the target was met, where the formula is set to show a green column for the month the target is met and a red column for the month the target is not met 
+
+![Image](https://github.com/user-attachments/assets/e80e1d51-de67-421a-8af3-3a4219c88202)
+
+- We then bring a rectangular shape which is then sent backwards which gives a nice background to the cards
+- We also introduce the dashboard title and company logo to the rectangular shape 
+- Next we bring in another Clustered Column chart which would show the Actual sales vs the Target sales every month 
+
+![Image](https://github.com/user-attachments/assets/9c8b4794-f3db-4a01-89bf-18efc3ce3719)
+
+- For the title of this Clustered Column chart we will use the Trend chart title DAX formula which will make the title dynamic 
+- After this we bring in a table which shows the Actual sales, Target sales and Variance according to the salesperson 
+
+![Image](https://github.com/user-attachments/assets/844943ad-3e17-4697-87f2-b22bf379da22)
+
+Note: Before bringing in the salesperson picture column in this chart, we need to make the picture field in the actual table's data category as "Image URL"
+- Next we insert a pie chart which shows the actual sales against the different quarters 
+
+![Image](https://github.com/user-attachments/assets/9dd67bb0-dc9c-404f-bfb9-4d67a5165dc5)
+
+- We also have a text box which gives a brief summary about the trends/insights seen after the data analysis 
+
+![Image](https://github.com/user-attachments/assets/1bc432bd-5166-4c39-b204-a23970cb762b)
+
+- We add a slicer which helps to drill down the data according to teams 
+
+![Image](https://github.com/user-attachments/assets/62c08876-6913-4a61-b51e-b32d6e57f249)
+
+Finally we apply the customizations required, shape the charts, create the color combinations to make the dashboard stand out 
+
+![Image](https://github.com/user-attachments/assets/72cf27d1-561d-4b73-98ea-6f605b293cb9)
+
+### Dynamic and interactivity
+
+The dashboard is designed to be highly dynamic and interactive, offering several key features to enhance user experience and data analysis:
+
+- Dynamic Indicators: Key performance indicators such as variance and sales are color-coded for quick insights. If targets are not met, these indicators will display in red, and they will automatically switch to green when targets are achieved.
+- Adaptive Titles: The titles of our visualizations are dynamic, providing immediate feedback on performance. They update to reflect the number of months targets were met versus those when they were not, offering a clear and concise summary at a glance.
+- Interactive Elements: Leveraging the inherent interactivity of Power BI dashboards, we have incorporated a team slicer. This allows users to filter and interact with the data based on different teams, making it easier to drill down into specific segments and gain deeper insights.
+These features ensure that our dashboard not only presents data effectively but also makes it easy for users to engage with and interpret the information, driving better decision-making
+
+### Insights
+
+The dashboard we have created effectively addresses the needs of our stakeholders. It clearly displays all the important and requested KPIs, highlights the months when targets were met, identifies the individuals who achieved their targets, and provides a brief summary of the overall performance. This comprehensive solution ensures that stakeholders have a clear and actionable understanding of the company's sales performan
+
